@@ -23,6 +23,7 @@ class ImageRequest extends FormRequest
     {
         return [
             'image' => 'required|image|mimes:jpeg,png,jpg',
+            'folder_name' => 'required'
         ];
     }
 
@@ -30,6 +31,7 @@ class ImageRequest extends FormRequest
     {
         return [
             'image.required' => 'Image is required.',
+            'folder_name.required' => 'Folder name is required.',
         ];
     }
 }
