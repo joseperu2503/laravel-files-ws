@@ -19,5 +19,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('upload_image', [ImageController::class,'upload_image']);
+Route::post('upload_image', [ImageController::class,'uploadImage']);
+Route::post('upload_images', [ImageController::class,'uploadImages']);
 
